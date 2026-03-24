@@ -29,7 +29,7 @@ img {
 .topo {
   text-align: center;
   padding: 2rem 1rem;
-  background: linear-gradient(135deg, #a01281, #6f1386);
+  background: linear-gradient(135deg, #240046, #7b2cbf);
   color: white;
 }
 
@@ -44,7 +44,7 @@ img {
 
 /* MENU */
 .menu {
-  display: flex;
+  display: none;
   justify-content: center;
   gap: 1rem;
   background-color: #212529;
@@ -63,6 +63,23 @@ img {
 
 .menu a:hover {
   background-color: #0d6efd;
+}
+
+.hamburguer {
+  background: linear-gradient(200deg, #c77dff, #5a189a);
+  color: white;
+  font-size: 2rem;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.hamburguer::after {
+  content: "Menu";
+  font-size: 1rem;
+  letter-spacing: 0.05em;
 }
 
 /* HERO */
@@ -227,9 +244,6 @@ th {
 
 /* Celulares */
 @media (max-width: 767px) {
-  .menu {
-    flex-direction: column;
-  }
 
   .hero {
     grid-template-columns: 1fr;
