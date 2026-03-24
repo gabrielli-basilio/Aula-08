@@ -230,3 +230,23 @@ th {
     font-size: 1.5rem;
   }
 }
+
+/* Breakpoint Extra*/
+@media(max-width: 768px){
+  .hero {
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .topo h1 {
+    font-size: 1.8rem;
+  }
+}
